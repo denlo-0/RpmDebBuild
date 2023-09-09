@@ -1,0 +1,18 @@
+version: '3'
+services:
+  ubuntu-linux-deb-build:
+    image: ubuntu:20.04
+    volumes:
+      - ./makedeb.sh:/dev/makedeb.sh
+      - ./control:/dev/control
+      - ./deb:/dev/deb
+    command: chmod u+x /dev/makedeb.sh
+    command: bash -c "/dev/makedeb.sh"
+  oracle-linux-rpm-build:
+    image: oraclelinux:8.4
+    volumes:
+      - ./makerpm.sh:/dev/makerpm.sh
+      - ./termcolor.spec:/dev/termcolor.spec
+      - ./rpm:/dev/rpm
+    command: chmod u+x /dev/makerpm.sh
+    command: bash -c "/dev/makerpm.sh"

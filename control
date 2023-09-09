@@ -1,0 +1,8 @@
+Package: Termcolor
+Version: 1.1.0
+Section: misc
+Priority: optional
+Architecture: all
+Depends: python3, bash
+Maintainer: XDDD
+Description: Termcolor as Deb
