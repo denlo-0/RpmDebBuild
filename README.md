@@ -7,7 +7,9 @@ docker compose up -d --build
 
 to check
 install the deb or rpm package as you wish
+
 to check deb
 	run : termcolor.py
+ 
 to check rpm 
 	run : termcolortest.py
