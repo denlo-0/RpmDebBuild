@@ -1,8 +1,10 @@
-Package: Termcolor
+Package: termcolor
 Version: 1.1.0
 Section: misc
 Priority: optional
 Architecture: all
 Depends: python3, bash
-Maintainer: XDDD
-Description: Termcolor as Deb
+Maintainer: root
+Description: ANSI color formatting for terminal output
+ Termcolor is a Python module for ANSI color formatting in terminal output.
+ It provides a simple way to add colored output to your Python scripts.

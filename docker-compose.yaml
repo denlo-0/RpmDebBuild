@@ -8,6 +8,7 @@ services:
       - ./deb:/dev/deb
     command: chmod u+x /dev/makedeb.sh
     command: bash -c "/dev/makedeb.sh"
+    
   oracle-linux-rpm-build:
     image: oraclelinux:8.4
     volumes:

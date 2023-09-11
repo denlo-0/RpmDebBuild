@@ -1,9 +1,9 @@
 Name:           termcolor
 Version:        1.1.0   
 Release:        1%{?dist}
-Summary:        termolor as RPM
+Summary:        ANSI color formatting for terminal output
 
-License:        test 
+License:        MIT 
 URL:            https://pypi.org/project/termcolor/
 Source0:        %{name}-%{version}.tar.gz
 
@@ -26,10 +26,8 @@ install -m 755 -p termcolor.py %{buildroot}/usr/bin/termcolor.py
 
 sed -i '1s|^.*$|#!/usr/bin/env python3|' %{buildroot}/usr/bin/termcolor.py
 
-#sed -i '1s|^.*$|# -*- coding: utf-8 -*-|' %{buildroot}/usr/bin/termcolor.py
 
 %files
-#%license LICENSE
 /usr/bin/termcolor.py
 
 %changelog
